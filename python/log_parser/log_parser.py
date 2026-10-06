@@ -12,5 +12,10 @@ with open("sample.log", "r") as f:
         else:
             counts[ip] = 1
 
-print(counts)
+threshold = 6
+
+
+for ip, count in counts.items():
+    if count >= threshold:
+       print(f"Flag: {ip} - {count} requests")
 
