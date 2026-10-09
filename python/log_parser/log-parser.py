@@ -38,6 +38,7 @@ for ip, hits in attacks.items():
     for status, path in hits:
         print(f"  {status}  {path}")
 
+
 with open("report.txt", "w") as out:
     out.write("=== LOG PARSER REPORT ===\n\n")
 
@@ -51,3 +52,4 @@ with open("report.txt", "w") as out:
         out.write(f"\n{ip}:\n")
         for status, path in hits:
             out.write(f"  {status}  {path}\n")
+
