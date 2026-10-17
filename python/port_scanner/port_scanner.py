@@ -1,7 +1,9 @@
 import socket
 
+
 target_ip = "127.0.0.1"
-ports = [22, 21, 53, 80, 443, 445]
+ports = range(1, 1025)
+
 
 for port in ports:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
