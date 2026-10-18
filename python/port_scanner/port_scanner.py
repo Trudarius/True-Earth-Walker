@@ -14,3 +14,11 @@ for port in ports:
     else:
         print(f"Port {port} is CLOSED — code: {result}")
     s.close()
+
+import argparse
+
+parser = argparse.ArgumentParser(description="True's Port Scanner")
+parser.add_argument("ip", help="Target IP address")
+parser.add_argument("start_port", type=int, help="Start port")
+parser.add_argument("end_port", type=int, help="End port")
+args = parser.parse_args()
