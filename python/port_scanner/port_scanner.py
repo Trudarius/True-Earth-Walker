@@ -27,6 +27,14 @@ with open("scan_report.txt", "w") as f:
             print(f"Port {port} is OPEN")
             f.write(f"Port {port} is OPEN\n")
             open_count += 1
+            try:
+                s.settimeout(2)
+                banner = s.recv(1024).decode(errors="ignore").strip()
+                if banner:
+                    print(f"  Banner: {banner}")
+                    f.write(f"  Banner: {banner}\n")
+            except:
+                pass
         s.close()
 
     elapsed = time.time() - start_time
