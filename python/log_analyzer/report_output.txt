@@ -1,0 +1,34 @@
+============================================================
+LOG ANALYZER v2 — BEACON DETECTION REPORT
+============================================================
+Log file: sample.log
+Threshold: ±5.0s deviation from mean, min 4 hits
+
+🚨 SUSPECTED BEACONS: 2
+✅ CLEARED (normal rhythm): 1
+⏸️  TOO FEW HITS: 3
+============================================================
+
+--- SUSPECTED BEACONS ---
+
+🚨 198.51.100.23:8443
+   6 hits | mean interval 60.0s | max deviation 2.0s
+   intervals: [60.0, 61.0, 58.0, 61.0, 60.0]
+
+🚨 203.0.113.42:443
+   6 hits | mean interval 59.8s | max deviation 2.2s
+   intervals: [59.0, 61.0, 58.0, 62.0, 59.0]
+
+--- NORMAL (cleared) ---
+
+   172.217.14.206:443
+   6 hits | mean interval 107.6s | max deviation 103.6s
+
+--- TOO FEW HITS TO JUDGE ---
+   1.1.1.1:53  (2 hits)
+   140.82.112.3:443  (3 hits)
+   8.8.8.8:53  (2 hits)
+
+============================================================
+check_that_ninja — every ninja, every time.
+============================================================

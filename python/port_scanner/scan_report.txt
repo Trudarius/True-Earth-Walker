@@ -1,4 +1,4 @@
-Scan of 127.0.0.1 ports 1-8001 (timeout 0.5s)
+Scan of 127.0.0.1 ports 1-8001 (timeout 0.5s, 20 workers)
 --------------------------------------------------
 Port 8000 is OPEN
-Scan complete: 1 open, 8000 closed — 2.61 seconds
+Scan complete: 1 open, 8000 closed — 11.75 seconds
